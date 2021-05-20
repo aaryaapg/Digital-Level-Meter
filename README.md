@@ -60,5 +60,6 @@ Divide each value with it's sensitivity scale factor. This value is different fo
 * https://github.com/tockn/MPU6050_tockn/issues/4
 10. I2C Write: https://forum.arduino.cc/t/how-to-read-a-register-value-using-the-wire-library/206123/2
 11. My Notes on MPU6050 Register Setup
+
 ![image](https://user-images.githubusercontent.com/61982410/118943750-8d6b6200-b971-11eb-8b1f-83712e294b95.png)
 
