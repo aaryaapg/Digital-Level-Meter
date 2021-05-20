@@ -31,8 +31,31 @@ Orientation data from gyroscope sensors is prone to drift significantly over tim
 
 # Procedure
 ## (1) Setting up MPU6050 Registers 
-```MPU6050_Init()``` Function
-![image](https://user-images.githubusercontent.com/61982410/118938502-5b0b3600-b96c-11eb-9b1d-f0a6a6522193.png)
+## (2) Calibrate MPU6050
+Take 1000 values and get the average value to calculate the offset or errors. This is then subtracted from the actual data to make it accurate.
+## (3) Sensitivity Scaling
+Divide each value with it's sensitivity scale factor. This value is different for the gyroscope and accelerometer and depends on their configuration during the setup stage. 
+## (4) Roll and Pitch Calculation
+1. Calculate Accelerometer Roll and Pitch
+2. Calculate elapsed time
+3. Use this formula to get gyroscope readings in degrees 
+> Gyroscope Angle = (Last Measured Filtered Angle) + ω×Δt
+4. Use a complementary filter to combat drift
+5. Save the data for comparison during the next loop
 
-
+# References
+1. Datasheet: https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf
+2. Register Map: https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf
+3. https://www.geekmomprojects.com/gyroscopes-and-accelerometers-on-a-chip/
+4. https://dronebotworkshop.com/mpu-6050-level/
+5. https://howtomechatronics.com/tutorials/arduino/arduino-and-mpu6050-accelerometer-and-gyroscope-tutorial/
+6. https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module
+7. https://playground.arduino.cc/Main/MPU-6050/#info
+8. Formulae
+* https://stackoverflow.com/questions/55866808/attitude-estimation-from-accelerometer-and-gyroscope-of-an-imu
+* https://stackoverflow.com/questions/3755059/3d-accelerometer-calculate-the-orientation
+9. Configuration
+* https://medium.com/@kavindugimhanzoysa/lets-work-with-mpu6050-gy-521-part1-6db0d47a35e6
+* https://github.com/tockn/MPU6050_tockn/issues/4
+10. I2C Write: https://forum.arduino.cc/t/how-to-read-a-register-value-using-the-wire-library/206123/2
 
