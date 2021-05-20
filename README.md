@@ -31,7 +31,8 @@ Orientation data from gyroscope sensors is prone to drift significantly over tim
 
 # Procedure
 ## (1) Setting up MPU6050 Registers 
-```MPU6050_Init() Function```
-### Step 1: 
+```MPU6050_Init()``` Function
+![image](https://user-images.githubusercontent.com/61982410/118938502-5b0b3600-b96c-11eb-9b1d-f0a6a6522193.png)
+
 
 
