@@ -31,6 +31,7 @@ Orientation data from gyroscope sensors is prone to drift significantly over tim
 
 # Procedure
 ## (1) Setting up MPU6050 Registers 
+Check References
 ## (2) Calibrate MPU6050
 Take 1000 values and get the average value to calculate the offset or errors. This is then subtracted from the actual data to make it accurate.
 ## (3) Sensitivity Scaling
