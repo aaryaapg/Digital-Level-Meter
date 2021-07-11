@@ -46,6 +46,9 @@ Divide each value with it's sensitivity scale factor. This value is different fo
 4. Use a complementary filter to combat drift
 5. Save the data for comparison during the next loop
 
+**This is how it looks:**
+![Digital Level](https://raw.githubusercontent.com/aaryaapg/Digital-Level-Meter/main/Digital%20Level%20Meter.jpg)
+
 # References
 1. Datasheet: https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf
 2. Register Map: https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf
