@@ -1,7 +1,5 @@
 # Digital-Level-Meter
-This project explores the functioning, calibration and mathematics involved in getting comprehensible data from MPU6050 (a low-cost, highly accurate IMU with 6 DOF). IMUs can be very difficult to process and set up. MPU6050 uses I2C to communicate with the microcontroller it is connected to, and always acts as a slave device. Using the raw data from the accelerometer and gyroscope, I have tried to compute Roll and Pitch. 
-
-Note: I have built upon a few codes that I found on the internet, modified them with respect to my goals, and tried to combine their most striking features to give me the most accurate data. References are provided below.
+This project explores the functioning, calibration and mathematics involved in getting comprehensible data from MPU6050 (a low-cost, highly accurate IMU with 6 DOF). MPU6050 uses I2C to communicate with the microcontroller it is connected to, and always acts as a slave device. Using the raw data from the accelerometer and gyroscope, I have tried to compute Roll and Pitch. 
 
 # Some Important concepts
 ## Slave Address Selection
